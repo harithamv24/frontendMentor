@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap");
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: hsl(47, 88%, 63%);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Figtree", sans-serif;
+      }
+      .container {
+        width: 340px;
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 5px 6px 2px 1px #000;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+        padding: 10px 15px;
+      }
+      button {
+        width: fit-content;
+        padding: 10px 15px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: hsl(47, 88%, 63%);
+        font-family: inherit;
+        font-weight: 800;
+      }
+      h2 {
+        font-weight: 800;
+      }
+      h2 + p {
+        color: hsl(0, 0%, 50%);
+        font-size: 16px;
+      }
+      .illustration {
+        width: 100%;
+      }
+
+      .illustration img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .img-and-name {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 0.6rem;
+      }
+      .img-and-name img {
+        width: 25px;
+      }
+      @media (max-width: 375px) {
+        .container {
+          width: 311px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Learning Published 21 Dec 2023 HTML & CSS foundations These languages are
+    the backbone of every website, defining structure, content, and
+    presentation. Greg Hooper -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <div class="container">
+      <div class="illustration">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="illustration image"
+        />
+      </div>
+      <button>Learning</button>
+      <p>Published 21 Dec 2023</p>
+      <h2>HTML & CSS foundations</h2>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div class="img-and-name">
+        <img src="./assets/images/image-avatar.webp" alt="image-avatar" />
+        <h3>Greg Hooper</h3>
+      </div>
+    </div>
+  </body>
+</html>
